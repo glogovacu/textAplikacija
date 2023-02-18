@@ -1,0 +1,28 @@
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe.config
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.pdb
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.AssemblyReference.cache
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Form1.resources
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Properties.Resources.resources
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.GenerateResource.cache
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.CoreCompileInputs.cache
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Admin.resources
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Recepcionar.resources
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uros\source\repos\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Dodaj.resources
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe.config
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.pdb
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.AssemblyReference.cache
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Admin.resources
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Dodaj.resources
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Form1.resources
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Recepcionar.resources
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Properties.Resources.resources
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.GenerateResource.cache
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.CoreCompileInputs.cache
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
+C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
