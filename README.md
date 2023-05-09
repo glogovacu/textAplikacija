@@ -1,8 +1,10 @@
 # textAplikacija
 Application for working in a hotel using .txt documents.
+
 Admin Login:
 username:a
 password:a
+
 Receptionist Login:
 username:d
 password:d
