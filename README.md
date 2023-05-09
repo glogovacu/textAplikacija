@@ -10,5 +10,12 @@ username: d
 password: d
 
 Changelog:
+
+09.05.2023.
+
 v1.1. Refactored and more modular version, also minor bug fixes.
+
+17.06.2022.
+
 v1.0. First Version
+
