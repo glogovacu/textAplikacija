@@ -26,3 +26,17 @@ C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\D
 C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.CoreCompileInputs.cache
 C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
 C:\Users\Uros\Desktop\Random folder\VISER\TVP\TVP1\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe.config
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.pdb
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.AssemblyReference.cache
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormAdmin.resources
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormDodaj.resources
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormLogin.resources
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormRecepcionar.resources
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Properties.Resources.resources
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.GenerateResource.cache
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.CoreCompileInputs.cache
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
