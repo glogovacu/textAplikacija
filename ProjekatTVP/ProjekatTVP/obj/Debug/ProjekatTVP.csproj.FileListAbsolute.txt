@@ -40,3 +40,7 @@ C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\
 C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.CoreCompileInputs.cache
 C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
 C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.exe.manifest
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.application
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe.manifest
+C:\Users\Uros\Documents\GitHub\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.application

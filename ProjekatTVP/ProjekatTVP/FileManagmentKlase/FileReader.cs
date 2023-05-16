@@ -15,6 +15,10 @@ namespace ProjekatTVP.DataKlase
         }
         public static List<Korisnik> ListKorisnik()
         {
+            if (!File.Exists(Putanje.Korisnici))
+            {
+                File.Create(Putanje.Korisnici);
+            }
             List<Korisnik> korisnici = new List<Korisnik>(); 
             List<string> linije = File.ReadAllLines(Putanje.Korisnici).ToList();
             foreach (var red in linije)
@@ -34,6 +38,10 @@ namespace ProjekatTVP.DataKlase
         }
         public static List<Gost> ListGost()
         {
+            if (!File.Exists(Putanje.Gosti))
+            {
+                File.Create(Putanje.Gosti);
+            }
             List<Gost> gost = new List<Gost>();
             List<string> linije = File.ReadAllLines(Putanje.Gosti).ToList();
             foreach (var red in linije)
@@ -52,6 +60,10 @@ namespace ProjekatTVP.DataKlase
         }
         public static List<Soba> ListSoba()
         {
+            if(!File.Exists(Putanje.Sobe))
+            {
+                File.Create(Putanje.Sobe);
+            }
             List<Soba> listaSoba = new List<Soba>();
             List<string> linije = File.ReadAllLines(Putanje.Sobe).ToList();
             foreach (var red in linije)
@@ -70,6 +82,10 @@ namespace ProjekatTVP.DataKlase
             return listaSoba;
         }
         public static List<Rezervacije> ListRezervacije() {
+            if (!File.Exists(Putanje.Rezervacije))
+            {
+                File.Create(Putanje.Rezervacije);
+            }
             List<Rezervacije> rezervacije = new List<Rezervacije>();
             List<string> linije = File.ReadAllLines(Putanje.Rezervacije).ToList();
             foreach (var red in linije)
