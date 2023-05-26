@@ -1,10 +1,12 @@
 # Hotel Managment Text Application
 
- This was first a school project that was rushed and very hard to read, but nonetheless i learend alot about files, arrays, OOP, Lists...
+This was first a school project that was rushed and very hard to read, but nonetheless i learend alot about files, arrays, OOP, Lists...
 
- Than after some time when i learned a little bit more about the SOLID principles and OOP i wanted to see how can i make the code more readable and scaleable so i refactored. I plan to do more refactoring and other improvments to the app.
+Than after some time when i learned a little bit more about the SOLID principles and OOP i wanted to see how can i make the code more readable and scaleable so i refactored. I plan to do more refactoring and other improvments to the app.
 
 The app is made for hotel managment using text files. It also checks if the fields are correctly typed out, empty, etc...
+
+### If you want to build the app everything will work if you follow publish wizard.
 
 ## There are 2 entities:
 
@@ -20,10 +22,11 @@ Receptionist Login:
 
 	password: d
 
-## TO-DO
+## To-Do
 - BinaryFormatter instead of ReadAllLines
 - Add Tab Control for better UI
 - Optimization if possible for text files
+- Implementation of encapsulation instead of static variables
 
 ## Changelog:
 
