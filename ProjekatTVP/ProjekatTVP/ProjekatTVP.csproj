@@ -79,31 +79,67 @@
     <Compile Include="FileManagmentKlase\FileRemover.cs" />
     <Compile Include="FileManagmentKlase\FileStorage.cs" />
     <Compile Include="FileManagmentKlase\FileWriter.cs" />
+    <Compile Include="Forms\Child Forms\Admin\FormGost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormGost.Designer.cs">
+      <DependentUpon>FormGost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormKorisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormKorisnik.Designer.cs">
+      <DependentUpon>FormKorisnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormRezervacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormRezervacije.Designer.cs">
+      <DependentUpon>FormRezervacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormSoba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Child Forms\Admin\FormSoba.Designer.cs">
+      <DependentUpon>FormSoba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Child Forms\GradientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Child Forms\GradientForm.Designer.cs">
+      <DependentUpon>GradientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomForm.Designer.cs">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HelperKlase\PovratneInformacije.cs" />
     <Compile Include="HelperKlase\Putanje.cs" />
     <Compile Include="HelperKlase\Utilities.cs" />
-    <Compile Include="Forms\FormAdmin.cs">
+    <Compile Include="Forms\Main Forms\FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormAdmin.Designer.cs">
+    <Compile Include="Forms\Main Forms\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormDodaj.cs">
+    <Compile Include="Forms\Main Forms\FormDodaj.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormDodaj.Designer.cs">
+    <Compile Include="Forms\Main Forms\FormDodaj.Designer.cs">
       <DependentUpon>FormDodaj.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormLogin.cs">
+    <Compile Include="Forms\Main Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormLogin.Designer.cs">
+    <Compile Include="Forms\Main Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormRecepcionar.cs">
+    <Compile Include="Forms\Main Forms\FormRecepcionar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormRecepcionar.Designer.cs">
+    <Compile Include="Forms\Main Forms\FormRecepcionar.Designer.cs">
       <DependentUpon>FormRecepcionar.cs</DependentUpon>
     </Compile>
     <Compile Include="DataKlase\Gost.cs" />
@@ -112,16 +148,46 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataKlase\Rezervacije.cs" />
     <Compile Include="DataKlase\Soba.cs" />
-    <EmbeddedResource Include="Forms\FormAdmin.resx">
+    <Compile Include="UI Elements\CurvedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI Elements\CurvedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI Elements\CurvedTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Elements\CurvedTextBox.Designer.cs">
+      <DependentUpon>CurvedTextBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormGost.resx">
+      <DependentUpon>FormGost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormKorisnik.resx">
+      <DependentUpon>FormKorisnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormRezervacije.resx">
+      <DependentUpon>FormRezervacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormSoba.resx">
+      <DependentUpon>FormSoba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Child Forms\GradientForm.resx">
+      <DependentUpon>GradientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomForm.resx">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Forms\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormDodaj.resx">
+    <EmbeddedResource Include="Forms\Main Forms\FormDodaj.resx">
       <DependentUpon>FormDodaj.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormLogin.resx">
+    <EmbeddedResource Include="Forms\Main Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormRecepcionar.resx">
+    <EmbeddedResource Include="Forms\Main Forms\FormRecepcionar.resx">
       <DependentUpon>FormRecepcionar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -132,7 +198,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI Elements\CurvedTextBox.resx">
+      <DependentUpon>CurvedTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ProjekatTVP_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -163,7 +233,22 @@
     <Content Include="gosti.txt" />
     <Content Include="korisnici.txt" />
     <Content Include="rezervacije.txt" />
+    <None Include="Slike\close.png" />
+    <None Include="Slike\closeManji.png" />
+    <None Include="Slike\maximize.png" />
+    <None Include="Slike\maximizeManji.png" />
+    <None Include="Slike\MinimizeManji.png" />
+    <None Include="Slike\Saly-3.png" />
+    <None Include="Slike\Saly-2.png" />
+    <None Include="Slike\software-engineer.png" />
+    <None Include="Slike\adminManji.png" />
+    <None Include="Slike\guests.png" />
+    <None Include="Slike\guestsManji.png" />
+    <None Include="Slike\bedManji.png" />
+    <None Include="Slike\desk-bellManji.png" />
+    <None Include="Slike\employeesManji.png" />
     <Content Include="sobe.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
