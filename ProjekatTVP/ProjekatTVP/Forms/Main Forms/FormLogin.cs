@@ -54,11 +54,6 @@ namespace ProjekatTVP
             this.Close();
         }
 
-        private void curvedTextBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtKorisnickoIme_Enter(object sender, EventArgs e)
         {
             if(txtKorisnickoIme.Text == "Username")

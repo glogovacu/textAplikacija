@@ -69,3 +69,4 @@ D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormRezervacije.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormSoba.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.GradientForm.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.AdminTextBox.resources
