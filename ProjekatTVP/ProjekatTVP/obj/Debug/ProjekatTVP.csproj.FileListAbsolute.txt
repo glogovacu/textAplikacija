@@ -62,11 +62,11 @@ D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.application
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.CurvedTextBox.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.CustomForm.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormGost.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormKorisnik.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormRezervacije.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormSoba.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.GradientForm.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.AdminTextBox.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.CustomTextBox.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.CustomComboBox.resources

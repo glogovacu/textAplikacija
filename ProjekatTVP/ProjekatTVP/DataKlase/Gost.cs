@@ -22,7 +22,7 @@ namespace ProjekatTVP
 
         public override string ToString()
         {
-            return "ID: " + _id + " Ime: " + _ime + " Prezime: " + _prezime + " Datum rodjenja: " + _datum.Day +"." + _datum.Month + "." + _datum.Year   +" Broj telefona: " + _telefon;
+            return "ID " + _id + " Name " + _ime + " LastName " + _prezime + " DateOfBirth " + _datum.Day +"." + _datum.Month + "." + _datum.Year   + " Phone " + _telefon;
         }
     }
 }

@@ -11,21 +11,16 @@ namespace ProjekatTVP
         public FormLogin()
         {
             InitializeComponent();
-            txtKorisnickoIme.Text = "Username";
-            txtPassword.Text = "Password";
-            txtKorisnickoIme.ForeColor = Color.FromArgb(128, 128, 128);
-            txtPassword.ForeColor = Color.FromArgb(128, 128, 128);
         }
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (txtKorisnickoIme.Text == "" || txtPassword.Text == "")
+            string user = txtKorisnickoIme.Texts;
+            string pass = txtPassword.Texts;
+            if (user == "" || pass == "")
             {
                 PovratneInformacije.OstaviliStePraznaPolja();
                 return;
             }
-            string user = txtKorisnickoIme.Text;
-            string pass = txtPassword.Text;
-            
             var povratnaInformacijaKorisnika = Utilities.VratiPovratneInformacijeZaKorisnika(user, pass);
 
             if (povratnaInformacijaKorisnika == null)
@@ -52,42 +47,6 @@ namespace ProjekatTVP
             this.Hide();
             formToShow.ShowDialog();
             this.Close();
-        }
-
-        private void txtKorisnickoIme_Enter(object sender, EventArgs e)
-        {
-            if(txtKorisnickoIme.Text == "Username")
-            {
-                txtKorisnickoIme.Text = "";
-                txtKorisnickoIme.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtKorisnickoIme_Leave(object sender, EventArgs e)
-        {
-            if(txtKorisnickoIme.Text == "")
-            {
-                txtKorisnickoIme.Text = "Username";
-                txtKorisnickoIme.ForeColor = Color.FromArgb(128, 128, 128);
-            }
-        }
-
-        private void txtPassword_Enter(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "Password")
-            {
-                txtPassword.Text = "";
-                txtPassword.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtPassword_Leave(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Password";
-                txtPassword.ForeColor = Color.FromArgb(128, 128, 128);
-            }
         }
     }
 }

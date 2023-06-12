@@ -26,7 +26,7 @@ namespace ProjekatTVP
 
         public override string ToString()
         {
-            return "ID: " + _id + " Broj sobe: " + _brsobe + " Broj kreveta: " + _brkreveta + " Tip sobe: " + _tip + " Cena: " + _cena + "$ Popust: " + _popust + "$ Minimum dana rezervacije: " + _mindana;
+            return "ID: " + _id + " NumberOfRooms: " + _brsobe + " NumberOfBeds: " + _brkreveta + " RoomType: " + _tip + " Price: " + _cena + "$ Discount: " + _popust + "$ MinimumStayTime: " + _mindana;
         }
     }
 }

@@ -148,11 +148,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataKlase\Rezervacije.cs" />
     <Compile Include="DataKlase\Soba.cs" />
-    <Compile Include="UI Elements\AdminTextBox.cs">
+    <Compile Include="UI Elements\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI Elements\AdminTextBox.Designer.cs">
-      <DependentUpon>AdminTextBox.cs</DependentUpon>
+    <Compile Include="UI Elements\CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="UI Elements\CurvedButton.cs">
       <SubType>Component</SubType>
@@ -160,11 +160,11 @@
     <Compile Include="UI Elements\CurvedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UI Elements\CurvedTextBox.cs">
+    <Compile Include="UI Elements\CustomComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI Elements\CurvedTextBox.Designer.cs">
-      <DependentUpon>CurvedTextBox.cs</DependentUpon>
+    <Compile Include="UI Elements\CustomComboBox.Designer.cs">
+      <DependentUpon>CustomComboBox.cs</DependentUpon>
     </Compile>
     <Compile Include="UI Elements\CustomDateTimePicker.cs">
       <SubType>Component</SubType>
@@ -209,11 +209,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI Elements\AdminTextBox.resx">
-      <DependentUpon>AdminTextBox.cs</DependentUpon>
+    <EmbeddedResource Include="UI Elements\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI Elements\CurvedTextBox.resx">
-      <DependentUpon>CurvedTextBox.cs</DependentUpon>
+    <EmbeddedResource Include="UI Elements\CustomComboBox.resx">
+      <DependentUpon>CustomComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ProjekatTVP_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">

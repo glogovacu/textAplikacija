@@ -12,7 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace ProjekatTVP.UI_Elements
 {
-    public partial class AdminTextBox : UserControl
+    public partial class CustomTextBox : UserControl
     {
         private Color borderColor = Color.MediumSlateBlue;
         private Color borderFocusColor = Color.HotPink;
@@ -24,7 +24,7 @@ namespace ProjekatTVP.UI_Elements
         private string placeholderText = "";
         private bool isPlaceholder = false;
         private bool isPasswordChar = false;
-        public AdminTextBox()
+        public CustomTextBox()
         {
             InitializeComponent();
         }

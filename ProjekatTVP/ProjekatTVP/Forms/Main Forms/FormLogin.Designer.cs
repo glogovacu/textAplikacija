@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.curvedPanel1 = new ProjekatTVP.UI_Elements.CurvedPanel();
+            this.txtPassword = new ProjekatTVP.UI_Elements.CustomTextBox();
+            this.txtKorisnickoIme = new ProjekatTVP.UI_Elements.CustomTextBox();
             this.btnLogin = new ProjekatTVP.UI_Elements.CurvedButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPassword = new ProjekatTVP.UI_Elements.CurvedTextBox();
-            this.txtKorisnickoIme = new ProjekatTVP.UI_Elements.CurvedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -47,10 +47,10 @@
             // curvedPanel1
             // 
             this.curvedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.curvedPanel1.Controls.Add(this.btnLogin);
-            this.curvedPanel1.Controls.Add(this.label2);
             this.curvedPanel1.Controls.Add(this.txtPassword);
             this.curvedPanel1.Controls.Add(this.txtKorisnickoIme);
+            this.curvedPanel1.Controls.Add(this.btnLogin);
+            this.curvedPanel1.Controls.Add(this.label2);
             this.curvedPanel1.Controls.Add(this.label1);
             this.curvedPanel1.Controls.Add(this.label4);
             this.curvedPanel1.Location = new System.Drawing.Point(363, 101);
@@ -58,13 +58,62 @@
             this.curvedPanel1.Size = new System.Drawing.Size(472, 523);
             this.curvedPanel1.TabIndex = 8;
             // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPassword.BorderColor = System.Drawing.Color.Black;
+            this.txtPassword.BorderFocusColor = System.Drawing.Color.Gray;
+            this.txtPassword.BorderRadius = 10;
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPassword.IsFocused = false;
+            this.txtPassword.Location = new System.Drawing.Point(40, 314);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPassword.PasswordChar = false;
+            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.Size = new System.Drawing.Size(398, 52);
+            this.txtPassword.TabIndex = 13;
+            this.txtPassword.Texts = "";
+            this.txtPassword.UnderlinedStyle = false;
+            // 
+            // txtKorisnickoIme
+            // 
+            this.txtKorisnickoIme.BackColor = System.Drawing.SystemColors.Window;
+            this.txtKorisnickoIme.BorderColor = System.Drawing.Color.Black;
+            this.txtKorisnickoIme.BorderFocusColor = System.Drawing.Color.Gray;
+            this.txtKorisnickoIme.BorderRadius = 10;
+            this.txtKorisnickoIme.BorderSize = 1;
+            this.txtKorisnickoIme.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKorisnickoIme.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKorisnickoIme.IsFocused = false;
+            this.txtKorisnickoIme.Location = new System.Drawing.Point(40, 217);
+            this.txtKorisnickoIme.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKorisnickoIme.Multiline = false;
+            this.txtKorisnickoIme.Name = "txtKorisnickoIme";
+            this.txtKorisnickoIme.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtKorisnickoIme.PasswordChar = false;
+            this.txtKorisnickoIme.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtKorisnickoIme.PlaceholderText = "Username";
+            this.txtKorisnickoIme.Size = new System.Drawing.Size(398, 52);
+            this.txtKorisnickoIme.TabIndex = 12;
+            this.txtKorisnickoIme.Texts = "";
+            this.txtKorisnickoIme.UnderlinedStyle = false;
+            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(135)))), ((int)(((byte)(0)))));
+            this.btnLogin.BorderColor = System.Drawing.Color.Black;
+            this.btnLogin.BorderOffset = 1;
+            this.btnLogin.CurveSize = 10;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(40, 422);
+            this.btnLogin.Location = new System.Drawing.Point(40, 395);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(398, 62);
             this.btnLogin.TabIndex = 11;
@@ -75,46 +124,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 288);
+            this.label2.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 273);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 29);
+            this.label2.Size = new System.Drawing.Size(296, 37);
             this.label2.TabIndex = 10;
             this.label2.Text = "Enter your Password";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPassword.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(40, 322);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(20);
-            this.txtPassword.Size = new System.Drawing.Size(398, 60);
-            this.txtPassword.TabIndex = 9;
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
-            // 
-            // txtKorisnickoIme
-            // 
-            this.txtKorisnickoIme.BackColor = System.Drawing.SystemColors.Window;
-            this.txtKorisnickoIme.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKorisnickoIme.Location = new System.Drawing.Point(40, 217);
-            this.txtKorisnickoIme.Margin = new System.Windows.Forms.Padding(5);
-            this.txtKorisnickoIme.Name = "txtKorisnickoIme";
-            this.txtKorisnickoIme.Padding = new System.Windows.Forms.Padding(20);
-            this.txtKorisnickoIme.Size = new System.Drawing.Size(398, 60);
-            this.txtKorisnickoIme.TabIndex = 8;
-            this.txtKorisnickoIme.Enter += new System.EventHandler(this.txtKorisnickoIme_Enter);
-            this.txtKorisnickoIme.Leave += new System.EventHandler(this.txtKorisnickoIme_Leave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 183);
+            this.label1.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 29);
+            this.label1.Size = new System.Drawing.Size(305, 37);
             this.label1.TabIndex = 7;
             this.label1.Text = "Enter your Username";
             // 
@@ -122,7 +145,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 44.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 44);
+            this.label4.Location = new System.Drawing.Point(26, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(250, 81);
             this.label4.TabIndex = 6;
@@ -188,11 +211,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private UI_Elements.CurvedTextBox txtPassword;
-        private UI_Elements.CurvedTextBox txtKorisnickoIme;
         private UI_Elements.CurvedButton btnLogin;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private UI_Elements.CustomTextBox txtKorisnickoIme;
+        private UI_Elements.CustomTextBox txtPassword;
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿namespace ProjekatTVP.UI_Elements
 {
-    partial class AdminTextBox
+    partial class CustomTextBox
     {
         /// <summary> 
         /// Required designer variable.
@@ -42,7 +42,7 @@
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
-            // AdminTextBox
+            // CustomTextBox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
@@ -50,7 +50,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DimGray;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "AdminTextBox";
+            this.Name = "CustomTextBox";
             this.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.Size = new System.Drawing.Size(250, 30);
             this.ResumeLayout(false);

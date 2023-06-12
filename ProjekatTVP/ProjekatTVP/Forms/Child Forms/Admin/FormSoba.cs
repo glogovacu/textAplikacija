@@ -11,28 +11,47 @@ using System.Windows.Forms;
 
 namespace ProjekatTVP.Forms.Child_Forms.Admin
 {
-    public partial class FormSoba : Form
+    public partial class FormSoba : GradientForm
     {
         public FormSoba()
         {
             InitializeComponent();
+        }
+        private void FormSoba_Load(object sender, EventArgs e)
+        {
             lbxSoba.DataSource = FileStorage.ListSobe;
+            lbxSoba.HorizontalScrollbar = true;
+            lbxSoba.UseTabStops = true;
+            // Make sure no items are displayed partially.
+            lbxSoba.IntegralHeight = true;
+
+            // Display a horizontal scroll bar.
+            lbxSoba.HorizontalScrollbar = true;
+
+            // Create a Graphics object to use when determining the size of the largest item in the ListBox.
+            Graphics g = lbxSoba.CreateGraphics();
+
+            // Determine the size for HorizontalExtent using the MeasureString method using the last item in the list.
+            int hzSize = (int)g.MeasureString(lbxSoba.Items[lbxSoba.Items.Count - 1].ToString(), lbxSoba.Font).Width + 120;
+            // Set the HorizontalExtent property.
+            lbxSoba.HorizontalExtent = hzSize;
+
         }
         private void btnUnesiSoba_Click(object sender, EventArgs e)
         {
-            if (txtSobaBroj.Text == "" || txtSobaBrojKreveta.Text == "" || cmbSobaTip.Text == "" || txtSobaCena.Text == "" || txtSobaPopust.Text == "" || txtSobaMin.Text == "")
+            if (txtSobaBroj.Texts == "" || txtSobaBrojKreveta.Texts == "" || cmbSobaTip.Text == "" || txtSobaCena.Texts == "" || txtSobaPopust.Texts == "" || txtSobaMin.Texts == "")
             {
                 PovratneInformacije.OstaviliStePraznaPolja();
                 return;
             }
-            if (!txtSobaBroj.Text.All(Char.IsDigit) || !txtSobaBrojKreveta.Text.All(Char.IsDigit) || cmbSobaTip.Text.Any(char.IsDigit) || !txtSobaCena.Text.All(Char.IsDigit) || !txtSobaPopust.Text.All(Char.IsDigit) || !txtSobaMin.Text.All(Char.IsDigit))
+            if (!txtSobaBroj.Texts.All(Char.IsDigit) || !txtSobaBrojKreveta.Texts.All(Char.IsDigit) || cmbSobaTip.Text.Any(char.IsDigit) || !txtSobaCena.Texts.All(Char.IsDigit) || !txtSobaPopust.Texts.All(Char.IsDigit) || !txtSobaMin.Texts.All(Char.IsDigit))
             {
                 PovratneInformacije.NekaPoljaNisuDobra();
                 return;
 
             }
 
-            FileWriter.FileSoba(int.Parse(txtSobaBroj.Text), int.Parse(txtSobaBrojKreveta.Text), cmbSobaTip.Text, int.Parse(txtSobaCena.Text), int.Parse(txtSobaPopust.Text), int.Parse(txtSobaMin.Text));
+            FileWriter.FileSoba(int.Parse(txtSobaBroj.Texts), int.Parse(txtSobaBrojKreveta.Texts), cmbSobaTip.Text, int.Parse(txtSobaCena.Texts), int.Parse(txtSobaPopust.Texts), int.Parse(txtSobaMin.Texts));
 
             lbxSoba.DataSource = null;
             lbxSoba.DataSource = FileStorage.ListSobe;
@@ -46,7 +65,7 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
                 return;
             }
 
-            FileRemover.FileSoba(int.Parse(txtID.Text));
+            FileRemover.FileSoba(int.Parse(txtID.Texts));
 
             lbxSoba.DataSource = null;
             lbxSoba.DataSource = FileStorage.ListSobe;
@@ -60,18 +79,18 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
             {
                 return;
             }
-            if (txtSobaBroj.Text == "" || txtSobaBrojKreveta.Text == "" || cmbSobaTip.Text == "" || txtSobaCena.Text == "" || txtSobaPopust.Text == "" || txtSobaMin.Text == "")
+            if (txtSobaBroj.Texts == "" || txtSobaBrojKreveta.Texts == "" || cmbSobaTip.Text == "" || txtSobaCena.Texts == "" || txtSobaPopust.Texts == "" || txtSobaMin.Texts == "")
             {
                 PovratneInformacije.OstaviliStePraznaPolja();
                 return;
             }
-            if (!txtSobaBroj.Text.All(Char.IsDigit) || !txtSobaBrojKreveta.Text.All(Char.IsDigit) || cmbSobaTip.Text.Any(char.IsDigit) || !txtSobaCena.Text.All(Char.IsDigit) || !txtSobaPopust.Text.All(Char.IsDigit) || !txtSobaMin.Text.All(Char.IsDigit))
+            if (!txtSobaBroj.Texts.All(Char.IsDigit) || !txtSobaBrojKreveta.Texts.All(Char.IsDigit) || cmbSobaTip.Text.Any(char.IsDigit) || !txtSobaCena.Texts.All(Char.IsDigit) || !txtSobaPopust.Texts.All(Char.IsDigit) || !txtSobaMin.Texts.All(Char.IsDigit))
             {
                 PovratneInformacije.NekaPoljaNisuDobra();
                 return;
             }
 
-            FileChanger.FileSobe(int.Parse(txtID.Text) - 1, int.Parse(txtSobaBroj.Text), int.Parse(txtSobaBrojKreveta.Text), cmbSobaTip.Text, int.Parse(txtSobaCena.Text), int.Parse(txtSobaPopust.Text), int.Parse(txtSobaMin.Text));
+            FileChanger.FileSobe(int.Parse(txtID.Texts) - 1, int.Parse(txtSobaBroj.Texts), int.Parse(txtSobaBrojKreveta.Texts), cmbSobaTip.Text, int.Parse(txtSobaCena.Texts), int.Parse(txtSobaPopust.Texts), int.Parse(txtSobaMin.Texts));
 
             lbxSoba.DataSource = null;
             lbxSoba.DataSource = FileStorage.ListSobe;
@@ -80,17 +99,25 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
         }
         private bool ProveriID<T>(List<T> listaZaProveru)
         {
-            if (txtID.Text == "")
+            if (txtID.Texts == "")
             {
                 PovratneInformacije.IDNijeUpisan();
                 return true;
             }
-            if (int.Parse(txtID.Text) > listaZaProveru.Count)
+            if (int.Parse(txtID.Texts) > listaZaProveru.Count)
             {
                 PovratneInformacije.IDNijeLepoUpisan();
                 return true;
             }
             return false;
+        }
+
+        private void lbxSoba_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index >= 0)
+            {
+                Utilities.DrawNewItems(sender, e);
+            }
         }
     }
 }

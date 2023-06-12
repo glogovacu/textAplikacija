@@ -143,7 +143,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -174,7 +175,7 @@
             // 
             // panelDesktopPane
             // 
-            this.panelDesktopPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(166)))), ((int)(((byte)(204)))));
+            this.panelDesktopPane.BackColor = System.Drawing.Color.Wheat;
             this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDesktopPane.Location = new System.Drawing.Point(268, 120);
             this.panelDesktopPane.Name = "panelDesktopPane";
@@ -196,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(188)))), ((int)(((byte)(150)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
             this.ClientSize = new System.Drawing.Size(1200, 715);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panelDesktopPane);

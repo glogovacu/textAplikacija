@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProjekatTVP.exe" size="266712">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProjekatTVP.exe" size="271320">
       <assemblyIdentity name="ProjekatTVP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UfcQbX+KsMM/QiCtQZ9NtG4CeJuVYFzDXQgq/XLFQIc=</dsig:DigestValue>
+        <dsig:DigestValue>0eS0nAKVba3AieRZmFWol9547LyRPMKPve4joX1NmKg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

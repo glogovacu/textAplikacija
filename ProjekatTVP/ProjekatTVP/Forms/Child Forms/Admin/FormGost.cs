@@ -22,21 +22,23 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
         private void FormGost_Load(object sender, EventArgs e)
         {
             lbxGost.DataSource = FileStorage.ListGosti;
+            lbxGost.HorizontalScrollbar = true;
+
         }
         private void btnUnesiGoste_Click(object sender, EventArgs e)
         {
-            if (txtGostIme.Text == "" || txtGostPrezime.Text == "" || txtGostTelefon.Text == "")
+            if (txtGostIme.Texts == "" || txtGostPrezime.Texts == "" || txtGostTelefon.Texts == "")
             {
                 PovratneInformacije.OstaviliStePraznaPolja();
                 return;
             }
-            if (txtGostIme.Text.Any(char.IsDigit) || txtGostPrezime.Text.Any(char.IsDigit) || !txtGostTelefon.Text.All(Char.IsDigit))
+            if (txtGostIme.Texts.Any(char.IsDigit) || txtGostPrezime.Texts.Any(char.IsDigit) || !txtGostTelefon.Texts.All(Char.IsDigit))
             {
                 PovratneInformacije.NekaPoljaNisuDobra();
                 return;
             }
 
-            FileWriter.FileGost(txtGostIme.Text, txtGostPrezime.Text, dateGostDatumRodjenja.Value, txtGostTelefon.Text);
+            FileWriter.FileGost(txtGostIme.Texts, txtGostPrezime.Texts, dateGostDatumRodjenja.Value, txtGostTelefon.Texts);
 
             lbxGost.DataSource = null;
             lbxGost.DataSource = FileStorage.ListGosti;
@@ -50,7 +52,7 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
                 return;
             }
 
-            FileRemover.FileGost(int.Parse(txtID.Text));
+            FileRemover.FileGost(int.Parse(txtID.Texts));
 
             lbxGost.DataSource = null;
             lbxGost.DataSource = FileStorage.ListGosti;
@@ -64,18 +66,18 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
             {
                 return;
             }
-            if (txtGostIme.Text == "" || txtGostPrezime.Text == "" || txtGostTelefon.Text == "")
+            if (txtGostIme.Texts == "" || txtGostPrezime.Texts == "" || txtGostTelefon.Texts == "")
             {
                 PovratneInformacije.OstaviliStePraznaPolja();
                 return;
             }
-            if (txtGostIme.Text.Any(char.IsDigit) || txtGostPrezime.Text.Any(char.IsDigit) || !txtGostTelefon.Text.All(Char.IsDigit))
+            if (txtGostIme.Texts.Any(char.IsDigit) || txtGostPrezime.Texts.Any(char.IsDigit) || !txtGostTelefon.Texts.All(Char.IsDigit))
             {
                 PovratneInformacije.NekaPoljaNisuDobra();
                 return;
             }
 
-            FileChanger.FileGost(int.Parse(txtID.Text), txtGostIme.Text, txtGostPrezime.Text, dateGostDatumRodjenja.Value, txtGostTelefon.Text);
+            FileChanger.FileGost(int.Parse(txtID.Texts), txtGostIme.Texts, txtGostPrezime.Texts, dateGostDatumRodjenja.Value, txtGostTelefon.Texts);
 
             lbxGost.DataSource = null;
             lbxGost.DataSource = FileStorage.ListGosti;
@@ -83,18 +85,25 @@ namespace ProjekatTVP.Forms.Child_Forms.Admin
         }
         private bool ProveriID<T>(List<T> listaZaProveru)
         {
-            if (txtID.Text == "")
+            if (txtID.Texts == "")
             {
                 PovratneInformacije.IDNijeUpisan();
                 return true;
             }
-            if (int.Parse(txtID.Text) > listaZaProveru.Count)
+            if (int.Parse(txtID.Texts) > listaZaProveru.Count)
             {
                 PovratneInformacije.IDNijeLepoUpisan();
                 return true;
             }
             return false;
         }
-        
+
+        private void lbxGost_DrawItem_1(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index >= 0)
+            {
+                Utilities.DrawNewItems(sender, e);
+            }
+        }
     }
 }
