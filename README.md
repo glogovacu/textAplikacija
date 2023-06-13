@@ -6,6 +6,12 @@ The app is made for hotel managment using text files. It consists of 4 enitites:
 
 If you want to build the app everything will work if you follow publish wizard.
 
+## Instalation
+
+1. Download the zip file of the release and extract it.
+2. Double click on the setup file.
+3. Follow the instalation wizard.
+4. The app will show up.
 
 ## There are 2 ways to login(different form for each):
 ![image](https://github.com/glogovacu/textAplikacija/assets/125755319/ecffc27f-b2d6-4997-9754-c486c8551c45)
