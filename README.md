@@ -6,20 +6,27 @@ The app is made for hotel managment using text files. It consists of 4 enitites:
 
 If you want to build the app everything will work if you follow publish wizard.
 
+
 ## There are 2 ways to login(different form for each):
+![image](https://github.com/glogovacu/textAplikacija/assets/125755319/ecffc27f-b2d6-4997-9754-c486c8551c45)
 
 
-Admin Login:
+### Admin Login:
 
-	username: a
+	Username: a
 
-	password: a
+	Password: a
 
-Receptionist Login:
+### Receptionist Login:
 
-	username: d
+	Username: d
 
-	password: d
+	Password: d
+
+## Admin Panel
+![image](https://github.com/glogovacu/textAplikacija/assets/125755319/2369ff9f-2d05-4255-a415-4681e7210dea)
+
+Manage guests, rooms, reservations and users.
 
 ## To-Do
 - BinaryFormatter instead of ReadAllLines
@@ -28,6 +35,8 @@ Receptionist Login:
 - Add a custom combo box 
 
 ## Changelog:
+	13.06.2023.
+		
 	v1.2. UI Overhaul and translation
 
 	09.05.2023.
@@ -37,4 +46,7 @@ Receptionist Login:
 	17.06.2022.
 
 	v1.0. First Version
+	
+## Reference
+	Login Ui: Figma Community
 
