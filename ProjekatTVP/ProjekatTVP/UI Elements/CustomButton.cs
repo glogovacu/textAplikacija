@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProjekatTVP.UI_Elements
 {
@@ -33,9 +27,8 @@ namespace ProjekatTVP.UI_Elements
         {
             base.OnPaint(e);
             Graphics graph = e.Graphics;
-            if (_borderRadius > 1)//Rounded TextBox
+            if (_borderRadius > 1)
             {
-                //-Fields
                 var rectBorderSmooth = this.ClientRectangle;
                 var rectBorder = Rectangle.Inflate(rectBorderSmooth, -_borderSize, -_borderSize);
                 int smoothSize = _borderSize > 0 ? _borderSize : 1;
@@ -44,20 +37,16 @@ namespace ProjekatTVP.UI_Elements
                 using (Pen penBorderSmooth = new Pen(this.Parent.BackColor, smoothSize))
                 using (Pen penBorder = new Pen(_borderColor, _borderSize))
                 {
-                    //-Drawing
-                    this.Region = new Region(pathBorderSmooth);//Set the rounded region of UserControl
-                    if (_borderRadius > 15) SetTextBoxRoundedRegion();//Set the rounded region of TextBox component
+                    this.Region = new Region(pathBorderSmooth);
+                    if (_borderRadius > 15) SetTextBoxRoundedRegion();
                     graph.SmoothingMode = SmoothingMode.AntiAlias;
                     penBorder.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-                    //Draw border smoothing
                     graph.DrawPath(penBorderSmooth, pathBorderSmooth);
-                    //Draw border
                     graph.DrawPath(penBorder, pathBorder);
                 }
             }
-            else //Square/Normal TextBox
+            else 
             {
-                //Draw border
                 using (Pen penBorder = new Pen(_borderColor, _borderSize))
                 {
                     this.Region = new Region(this.ClientRectangle);

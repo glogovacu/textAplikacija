@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProjekatTVP.UI_Elements
 {
@@ -16,10 +10,15 @@ namespace ProjekatTVP.UI_Elements
         private int _borderRadius = 10;
         private Color _borderColor = Color.WhiteSmoke;
 
+        #region Properties
+
         public int BorderSize { get => _borderSize; set => _borderSize = value; }
         public int BorderRadius { get => _borderRadius; set => _borderRadius = value; }
         public Color BorderColor { get => _borderColor; set => _borderColor = value; }
 
+        #endregion
+
+        #region Overrides
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -52,6 +51,9 @@ namespace ProjekatTVP.UI_Elements
                 }
             }
         }
+        #endregion
+
+        #region Private Methods
         private GraphicsPath GetFigurePath(Rectangle rect, int radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -71,5 +73,6 @@ namespace ProjekatTVP.UI_Elements
             this.Region = new Region(pathTxt);
             pathTxt.Dispose();
         }
+        #endregion
     }
 }

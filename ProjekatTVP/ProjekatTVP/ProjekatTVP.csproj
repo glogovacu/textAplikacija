@@ -245,19 +245,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Slike\closeManji.png" />
-    <None Include="Slike\maximizeManji.png" />
-    <None Include="Slike\MinimizeManji.png" />
-    <None Include="Slike\Saly-3.png" />
-    <None Include="Slike\Saly-2.png" />
-    <None Include="Slike\guestsManji.png" />
-    <None Include="Slike\bedManji.png" />
-    <None Include="Slike\desk-bellManji.png" />
-    <None Include="Slike\employeesManji.png" />
-    <None Include="Slike\calendarManji.png" />
+    <None Include="Images\closeManji.png" />
+    <None Include="Images\maximizeManji.png" />
+    <None Include="Images\MinimizeManji.png" />
+    <None Include="Images\Saly-3.png" />
+    <None Include="Images\Saly-2.png" />
+    <None Include="Images\guestsManji.png" />
+    <None Include="Images\bedManji.png" />
+    <None Include="Images\desk-bellManji.png" />
+    <None Include="Images\employeesManji.png" />
+    <None Include="Images\calendarManji.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Slike\admin.png" />
+    <None Include="Images\admin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

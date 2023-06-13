@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace CustomControls.RJControls
 {
@@ -14,14 +9,18 @@ namespace CustomControls.RJControls
     {
         private Color _backColor = Color.Wheat;
         private Color _foreColor = Color.White;
+
         private Color _borderColor = Color.MediumPurple;
         private int _borderSize = 0;
 
         private bool _droppedDown = false;
+
         private Image _calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
         private RectangleF _iconButtonArea;
+
         private const int _calendarIconWidth = 34;
         private const int _arrowIconWidth = 17;
+
         public CustomDateTimePicker()
         {
             this.SetStyle(ControlStyles.UserPaint, true);

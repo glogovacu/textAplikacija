@@ -1,7 +1,6 @@
 ﻿using ProjekatTVP.FileManagment;
 using ProjekatTVP.Forms;
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace ProjekatTVP

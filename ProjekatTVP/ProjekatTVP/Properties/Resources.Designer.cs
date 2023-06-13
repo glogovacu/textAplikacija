@@ -105,7 +105,7 @@ namespace ProjekatTVP.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap desk_bellManji {
             get {
-                object obj = ResourceManager.GetObject("desk-bellManji", resourceCulture);
+                object obj = ResourceManager.GetObject("desk_bellManji", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,7 +155,7 @@ namespace ProjekatTVP.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Saly_2 {
             get {
-                object obj = ResourceManager.GetObject("Saly-2", resourceCulture);
+                object obj = ResourceManager.GetObject("Saly_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace ProjekatTVP.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Saly_3 {
             get {
-                object obj = ResourceManager.GetObject("Saly-3", resourceCulture);
+                object obj = ResourceManager.GetObject("Saly_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

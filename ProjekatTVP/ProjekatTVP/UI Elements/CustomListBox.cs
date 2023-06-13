@@ -1,10 +1,4 @@
-﻿using ProjekatTVP.FileManagment;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace ProjekatTVP.UI_Elements
@@ -15,6 +9,8 @@ namespace ProjekatTVP.UI_Elements
         {
             this.DrawItem += CustomListBox_DrawItem;
         }
+
+        #region Events
 
         private void CustomListBox_DrawItem(object sender, DrawItemEventArgs e)
         {
@@ -41,5 +37,6 @@ namespace ProjekatTVP.UI_Elements
                 }
             }
         }
+        #endregion
     }
 }
