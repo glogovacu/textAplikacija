@@ -8,6 +8,7 @@ If you want to build the app everything will work if you follow publish wizard.
 
 ## There are 2 ways to login(different form for each):
 
+
 Admin Login:
 
 	username: a
@@ -22,11 +23,12 @@ Receptionist Login:
 
 ## To-Do
 - BinaryFormatter instead of ReadAllLines
-- Add Tab Control for better UI
 - Optimization if possible for text files
 - Implementation of encapsulation instead of static variables
+- Add a custom combo box 
 
 ## Changelog:
+	v1.2. UI Overhaul and translation
 
 	09.05.2023.
 
