@@ -33,13 +33,13 @@
             this.btnReservations = new System.Windows.Forms.Button();
             this.btnRooms = new System.Windows.Forms.Button();
             this.btnGuests = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelAdmin = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             this.panelMenu.Controls.Add(this.btnReservations);
             this.panelMenu.Controls.Add(this.btnRooms);
             this.panelMenu.Controls.Add(this.btnGuests);
-            this.panelMenu.Controls.Add(this.panel2);
+            this.panelMenu.Controls.Add(this.panelAdmin);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -141,21 +141,21 @@
             this.btnGuests.UseVisualStyleBackColor = false;
             this.btnGuests.Click += new System.EventHandler(this.btnGuests_Click);
             // 
-            // panel2
+            // panelAdmin
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(268, 120);
-            this.panel2.TabIndex = 0;
+            this.panelAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
+            this.panelAdmin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAdmin.Controls.Add(this.pictureBox1);
+            this.panelAdmin.Controls.Add(this.label17);
+            this.panelAdmin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelAdmin.Location = new System.Drawing.Point(0, 0);
+            this.panelAdmin.Name = "panelAdmin";
+            this.panelAdmin.Size = new System.Drawing.Size(268, 120);
+            this.panelAdmin.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProjekatTVP.Properties.Resources.software_engineer;
+            this.pictureBox1.Image = global::ProjekatTVP.Properties.Resources.admin;
             this.pictureBox1.Location = new System.Drawing.Point(12, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
@@ -187,11 +187,12 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(667, 41);
+            this.lblTitle.Location = new System.Drawing.Point(614, 35);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(134, 44);
             this.lblTitle.TabIndex = 85;
             this.lblTitle.Text = "Guests";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormAdmin
             // 
@@ -208,8 +209,8 @@
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panelMenu.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelAdmin.ResumeLayout(false);
+            this.panelAdmin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,7 +221,7 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelAdmin;
         private System.Windows.Forms.Panel panelDesktopPane;
         private System.Windows.Forms.Button btnGuests;
         private System.Windows.Forms.Button btnUsers;

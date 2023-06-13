@@ -74,34 +74,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileManagmentKlase\FileChanger.cs" />
-    <Compile Include="FileManagmentKlase\FileReader.cs" />
-    <Compile Include="FileManagmentKlase\FileRemover.cs" />
-    <Compile Include="FileManagmentKlase\FileStorage.cs" />
-    <Compile Include="FileManagmentKlase\FileWriter.cs" />
-    <Compile Include="Forms\Child Forms\Admin\FormGost.cs">
+    <Compile Include="FileManagment\FileChanger.cs" />
+    <Compile Include="FileManagment\FileReader.cs" />
+    <Compile Include="FileManagment\FileRemover.cs" />
+    <Compile Include="FileManagment\FileStorage.cs" />
+    <Compile Include="FileManagment\FileWriter.cs" />
+    <Compile Include="Forms\Child Forms\Admin\FormGuest.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Child Forms\Admin\FormGost.Designer.cs">
-      <DependentUpon>FormGost.cs</DependentUpon>
+      <DependentUpon>FormGuest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Child Forms\Admin\FormKorisnik.cs">
+    <Compile Include="Forms\Child Forms\Admin\FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Child Forms\Admin\FormKorisnik.Designer.cs">
-      <DependentUpon>FormKorisnik.cs</DependentUpon>
+    <Compile Include="Forms\Child Forms\Admin\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Child Forms\Admin\FormRezervacije.cs">
+    <Compile Include="Forms\Child Forms\Admin\FormReservations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Child Forms\Admin\FormRezervacije.Designer.cs">
-      <DependentUpon>FormRezervacije.cs</DependentUpon>
+    <Compile Include="Forms\Child Forms\Admin\FormReservations.Designer.cs">
+      <DependentUpon>FormReservations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Child Forms\Admin\FormSoba.cs">
+    <Compile Include="Forms\Child Forms\Admin\FormRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Child Forms\Admin\FormSoba.Designer.cs">
-      <DependentUpon>FormSoba.cs</DependentUpon>
+    <Compile Include="Forms\Child Forms\Admin\FormRoom.Designer.cs">
+      <DependentUpon>FormRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Child Forms\GradientForm.cs">
       <SubType>Form</SubType>
@@ -115,8 +115,8 @@
     <Compile Include="Forms\CustomForm.Designer.cs">
       <DependentUpon>CustomForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HelperKlase\PovratneInformacije.cs" />
-    <Compile Include="HelperKlase\Putanje.cs" />
+    <Compile Include="HelperKlase\Feedback.cs" />
+    <Compile Include="HelperKlase\Paths.cs" />
     <Compile Include="HelperKlase\Utilities.cs" />
     <Compile Include="Forms\Main Forms\FormAdmin.cs">
       <SubType>Form</SubType>
@@ -124,11 +124,11 @@
     <Compile Include="Forms\Main Forms\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main Forms\FormDodaj.cs">
+    <Compile Include="Forms\Main Forms\FormAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main Forms\FormDodaj.Designer.cs">
-      <DependentUpon>FormDodaj.cs</DependentUpon>
+    <Compile Include="Forms\Main Forms\FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Main Forms\FormLogin.cs">
       <SubType>Form</SubType>
@@ -136,28 +136,36 @@
     <Compile Include="Forms\Main Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main Forms\FormRecepcionar.cs">
+    <Compile Include="Forms\Main Forms\FormReceptionist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main Forms\FormRecepcionar.Designer.cs">
-      <DependentUpon>FormRecepcionar.cs</DependentUpon>
+    <Compile Include="Forms\Main Forms\FormReceptionist.Designer.cs">
+      <DependentUpon>FormReceptionist.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataKlase\Gost.cs" />
-    <Compile Include="DataKlase\Korisnik.cs" />
+    <Compile Include="Data\Guest.cs" />
+    <Compile Include="Data\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataKlase\Rezervacije.cs" />
-    <Compile Include="DataKlase\Soba.cs" />
+    <Compile Include="Data\Reservations.cs" />
+    <Compile Include="Data\Room.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Elements\CustomListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI Elements\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI Elements\CustomTextBox.Designer.cs">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI Elements\CurvedButton.cs">
+    <Compile Include="UI Elements\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UI Elements\CurvedPanel.cs">
+    <Compile Include="UI Elements\CustomPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UI Elements\CustomComboBox.cs">
@@ -169,17 +177,17 @@
     <Compile Include="UI Elements\CustomDateTimePicker.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Forms\Child Forms\Admin\FormGost.resx">
-      <DependentUpon>FormGost.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormGuest.resx">
+      <DependentUpon>FormGuest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Child Forms\Admin\FormKorisnik.resx">
-      <DependentUpon>FormKorisnik.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Child Forms\Admin\FormRezervacije.resx">
-      <DependentUpon>FormRezervacije.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormReservations.resx">
+      <DependentUpon>FormReservations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Child Forms\Admin\FormSoba.resx">
-      <DependentUpon>FormSoba.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Child Forms\Admin\FormRoom.resx">
+      <DependentUpon>FormRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Child Forms\GradientForm.resx">
       <DependentUpon>GradientForm.cs</DependentUpon>
@@ -190,25 +198,20 @@
     <EmbeddedResource Include="Forms\Main Forms\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main Forms\FormDodaj.resx">
-      <DependentUpon>FormDodaj.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Main Forms\FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main Forms\FormRecepcionar.resx">
-      <DependentUpon>FormRecepcionar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Main Forms\FormReceptionist.resx">
+      <DependentUpon>FormReceptionist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UI Elements\CustomTextBox.resx">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,26 +245,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gosti.txt" />
-    <Content Include="korisnici.txt" />
-    <Content Include="rezervacije.txt" />
-    <None Include="Slike\close.png" />
     <None Include="Slike\closeManji.png" />
-    <None Include="Slike\maximize.png" />
     <None Include="Slike\maximizeManji.png" />
     <None Include="Slike\MinimizeManji.png" />
     <None Include="Slike\Saly-3.png" />
     <None Include="Slike\Saly-2.png" />
-    <None Include="Slike\software-engineer.png" />
-    <None Include="Slike\adminManji.png" />
-    <None Include="Slike\guests.png" />
     <None Include="Slike\guestsManji.png" />
     <None Include="Slike\bedManji.png" />
     <None Include="Slike\desk-bellManji.png" />
     <None Include="Slike\employeesManji.png" />
     <None Include="Slike\calendarManji.png" />
-    <Content Include="sobe.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Slike\admin.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

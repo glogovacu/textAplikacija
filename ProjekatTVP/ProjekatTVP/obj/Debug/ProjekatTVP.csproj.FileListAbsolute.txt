@@ -52,9 +52,7 @@ D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\bin\Debug\ProjekatTVP.
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.AssemblyReference.cache
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.SuggestedBindingRedirects.cache
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormAdmin.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormDodaj.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormLogin.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormRecepcionar.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Properties.Resources.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.GenerateResource.cache
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.csproj.CoreCompileInputs.cache
@@ -63,10 +61,12 @@ D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.exe
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.pdb
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.CustomForm.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormGost.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormKorisnik.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormRezervacije.resources
-D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormSoba.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.GradientForm.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.CustomTextBox.resources
 D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.UI_Elements.CustomComboBox.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormUser.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormRoom.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormGuest.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.Forms.Child_Forms.Admin.FormReservations.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormAdd.resources
+D:\Ostali Projekti\textAplikacija\ProjekatTVP\ProjekatTVP\obj\Debug\ProjekatTVP.FormReceptionist.resources

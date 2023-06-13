@@ -63,9 +63,9 @@ namespace ProjekatTVP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap adminManji {
+        internal static System.Drawing.Bitmap admin {
             get {
-                object obj = ResourceManager.GetObject("adminManji", resourceCulture);
+                object obj = ResourceManager.GetObject("admin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,16 +86,6 @@ namespace ProjekatTVP.Properties {
         internal static System.Drawing.Bitmap calendarManji {
             get {
                 object obj = ResourceManager.GetObject("calendarManji", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap close {
-            get {
-                object obj = ResourceManager.GetObject("close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,29 +123,9 @@ namespace ProjekatTVP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap guests {
-            get {
-                object obj = ResourceManager.GetObject("guests", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap guestsManji {
             get {
                 object obj = ResourceManager.GetObject("guestsManji", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap maximize {
-            get {
-                object obj = ResourceManager.GetObject("maximize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,16 +166,6 @@ namespace ProjekatTVP.Properties {
         internal static System.Drawing.Bitmap Saly_3 {
             get {
                 object obj = ResourceManager.GetObject("Saly-3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap software_engineer {
-            get {
-                object obj = ResourceManager.GetObject("software-engineer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

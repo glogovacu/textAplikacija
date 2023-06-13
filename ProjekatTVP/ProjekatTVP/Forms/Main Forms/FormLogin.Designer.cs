@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.curvedPanel1 = new ProjekatTVP.UI_Elements.CurvedPanel();
+            this.curvedPanel1 = new ProjekatTVP.UI_Elements.CustomPanel();
             this.txtPassword = new ProjekatTVP.UI_Elements.CustomTextBox();
             this.txtKorisnickoIme = new ProjekatTVP.UI_Elements.CustomTextBox();
-            this.btnLogin = new ProjekatTVP.UI_Elements.CurvedButton();
+            this.btnLogin = new ProjekatTVP.UI_Elements.CustomButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,6 +47,9 @@
             // curvedPanel1
             // 
             this.curvedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.curvedPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.curvedPanel1.BorderRadius = 10;
+            this.curvedPanel1.BorderSize = 0;
             this.curvedPanel1.Controls.Add(this.txtPassword);
             this.curvedPanel1.Controls.Add(this.txtKorisnickoIme);
             this.curvedPanel1.Controls.Add(this.btnLogin);
@@ -192,7 +195,6 @@
             this.Controls.Add(this.curvedPanel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(350, 450);
             this.Name = "FormLogin";
             this.ShowInTaskbar = false;
@@ -207,11 +209,11 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private UI_Elements.CurvedPanel curvedPanel1;
+        private UI_Elements.CustomPanel curvedPanel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private UI_Elements.CurvedButton btnLogin;
+        private UI_Elements.CustomButton btnLogin;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private UI_Elements.CustomTextBox txtKorisnickoIme;

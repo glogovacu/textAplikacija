@@ -1,6 +1,6 @@
 ﻿namespace ProjekatTVP.Forms.Child_Forms.Admin
 {
-    partial class FormGost
+    partial class FormGuest
     {
         /// <summary>
         /// Required designer variable.
@@ -33,15 +33,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtGostIme = new ProjekatTVP.UI_Elements.CustomTextBox();
-            this.txtGostPrezime = new ProjekatTVP.UI_Elements.CustomTextBox();
-            this.txtGostTelefon = new ProjekatTVP.UI_Elements.CustomTextBox();
+            this.txtGuestFirstName = new ProjekatTVP.UI_Elements.CustomTextBox();
+            this.txtGuestLastName = new ProjekatTVP.UI_Elements.CustomTextBox();
+            this.txtGuestPhone = new ProjekatTVP.UI_Elements.CustomTextBox();
             this.txtID = new ProjekatTVP.UI_Elements.CustomTextBox();
-            this.dateGostDatumRodjenja = new CustomControls.RJControls.CustomDateTimePicker();
-            this.curvedButton1 = new ProjekatTVP.UI_Elements.CurvedButton();
-            this.curvedButton2 = new ProjekatTVP.UI_Elements.CurvedButton();
-            this.curvedButton3 = new ProjekatTVP.UI_Elements.CurvedButton();
-            this.lbxGost = new System.Windows.Forms.ListBox();
+            this.dateGuestDateOfBirth = new CustomControls.RJControls.CustomDateTimePicker();
+            this.curvedButton1 = new ProjekatTVP.UI_Elements.CustomButton();
+            this.curvedButton2 = new ProjekatTVP.UI_Elements.CustomButton();
+            this.curvedButton3 = new ProjekatTVP.UI_Elements.CustomButton();
+            this.lbxGuest = new ProjekatTVP.UI_Elements.CustomListBox();
             this.SuspendLayout();
             // 
             // label9
@@ -88,9 +88,9 @@
             this.label6.Location = new System.Drawing.Point(234, 77);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 22);
+            this.label6.Size = new System.Drawing.Size(98, 22);
             this.label6.TabIndex = 86;
-            this.label6.Text = "Name";
+            this.label6.Text = "First Name";
             // 
             // label5
             // 
@@ -100,78 +100,78 @@
             this.label5.Location = new System.Drawing.Point(230, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(292, 22);
+            this.label5.Size = new System.Drawing.Size(184, 22);
             this.label5.TabIndex = 92;
-            this.label5.Text = "ID (Only for changing and deleting)";
+            this.label5.Text = "ID (Change or Delete)";
             // 
-            // txtGostIme
+            // txtGuestFirstName
             // 
-            this.txtGostIme.BackColor = System.Drawing.Color.Wheat;
-            this.txtGostIme.BorderColor = System.Drawing.Color.Black;
-            this.txtGostIme.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
-            this.txtGostIme.BorderRadius = 10;
-            this.txtGostIme.BorderSize = 2;
-            this.txtGostIme.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGostIme.ForeColor = System.Drawing.Color.Black;
-            this.txtGostIme.IsFocused = false;
-            this.txtGostIme.Location = new System.Drawing.Point(234, 103);
-            this.txtGostIme.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGostIme.Multiline = false;
-            this.txtGostIme.Name = "txtGostIme";
-            this.txtGostIme.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGostIme.PasswordChar = false;
-            this.txtGostIme.PlaceholderColor = System.Drawing.Color.Gray;
-            this.txtGostIme.PlaceholderText = "John";
-            this.txtGostIme.Size = new System.Drawing.Size(233, 37);
-            this.txtGostIme.TabIndex = 96;
-            this.txtGostIme.Texts = "";
-            this.txtGostIme.UnderlinedStyle = false;
+            this.txtGuestFirstName.BackColor = System.Drawing.Color.Wheat;
+            this.txtGuestFirstName.BorderColor = System.Drawing.Color.Black;
+            this.txtGuestFirstName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
+            this.txtGuestFirstName.BorderRadius = 10;
+            this.txtGuestFirstName.BorderSize = 2;
+            this.txtGuestFirstName.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGuestFirstName.ForeColor = System.Drawing.Color.Black;
+            this.txtGuestFirstName.IsFocused = false;
+            this.txtGuestFirstName.Location = new System.Drawing.Point(234, 103);
+            this.txtGuestFirstName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGuestFirstName.Multiline = false;
+            this.txtGuestFirstName.Name = "txtGuestFirstName";
+            this.txtGuestFirstName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGuestFirstName.PasswordChar = false;
+            this.txtGuestFirstName.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txtGuestFirstName.PlaceholderText = "John";
+            this.txtGuestFirstName.Size = new System.Drawing.Size(233, 37);
+            this.txtGuestFirstName.TabIndex = 96;
+            this.txtGuestFirstName.Texts = "";
+            this.txtGuestFirstName.UnderlinedStyle = false;
             // 
-            // txtGostPrezime
+            // txtGuestLastName
             // 
-            this.txtGostPrezime.BackColor = System.Drawing.Color.Wheat;
-            this.txtGostPrezime.BorderColor = System.Drawing.Color.Black;
-            this.txtGostPrezime.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
-            this.txtGostPrezime.BorderRadius = 10;
-            this.txtGostPrezime.BorderSize = 2;
-            this.txtGostPrezime.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGostPrezime.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGostPrezime.IsFocused = false;
-            this.txtGostPrezime.Location = new System.Drawing.Point(234, 181);
-            this.txtGostPrezime.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGostPrezime.Multiline = false;
-            this.txtGostPrezime.Name = "txtGostPrezime";
-            this.txtGostPrezime.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGostPrezime.PasswordChar = false;
-            this.txtGostPrezime.PlaceholderColor = System.Drawing.Color.Gray;
-            this.txtGostPrezime.PlaceholderText = "Smith";
-            this.txtGostPrezime.Size = new System.Drawing.Size(233, 37);
-            this.txtGostPrezime.TabIndex = 97;
-            this.txtGostPrezime.Texts = "";
-            this.txtGostPrezime.UnderlinedStyle = false;
+            this.txtGuestLastName.BackColor = System.Drawing.Color.Wheat;
+            this.txtGuestLastName.BorderColor = System.Drawing.Color.Black;
+            this.txtGuestLastName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
+            this.txtGuestLastName.BorderRadius = 10;
+            this.txtGuestLastName.BorderSize = 2;
+            this.txtGuestLastName.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGuestLastName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtGuestLastName.IsFocused = false;
+            this.txtGuestLastName.Location = new System.Drawing.Point(234, 181);
+            this.txtGuestLastName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGuestLastName.Multiline = false;
+            this.txtGuestLastName.Name = "txtGuestLastName";
+            this.txtGuestLastName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGuestLastName.PasswordChar = false;
+            this.txtGuestLastName.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txtGuestLastName.PlaceholderText = "Smith";
+            this.txtGuestLastName.Size = new System.Drawing.Size(233, 37);
+            this.txtGuestLastName.TabIndex = 97;
+            this.txtGuestLastName.Texts = "";
+            this.txtGuestLastName.UnderlinedStyle = false;
             // 
-            // txtGostTelefon
+            // txtGuestPhone
             // 
-            this.txtGostTelefon.BackColor = System.Drawing.Color.Wheat;
-            this.txtGostTelefon.BorderColor = System.Drawing.Color.Black;
-            this.txtGostTelefon.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
-            this.txtGostTelefon.BorderRadius = 10;
-            this.txtGostTelefon.BorderSize = 2;
-            this.txtGostTelefon.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGostTelefon.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGostTelefon.IsFocused = false;
-            this.txtGostTelefon.Location = new System.Drawing.Point(474, 181);
-            this.txtGostTelefon.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGostTelefon.Multiline = false;
-            this.txtGostTelefon.Name = "txtGostTelefon";
-            this.txtGostTelefon.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGostTelefon.PasswordChar = false;
-            this.txtGostTelefon.PlaceholderColor = System.Drawing.Color.Gray;
-            this.txtGostTelefon.PlaceholderText = "555-333";
-            this.txtGostTelefon.Size = new System.Drawing.Size(233, 37);
-            this.txtGostTelefon.TabIndex = 98;
-            this.txtGostTelefon.Texts = "";
-            this.txtGostTelefon.UnderlinedStyle = false;
+            this.txtGuestPhone.BackColor = System.Drawing.Color.Wheat;
+            this.txtGuestPhone.BorderColor = System.Drawing.Color.Black;
+            this.txtGuestPhone.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(166)))), ((int)(((byte)(92)))));
+            this.txtGuestPhone.BorderRadius = 10;
+            this.txtGuestPhone.BorderSize = 2;
+            this.txtGuestPhone.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGuestPhone.ForeColor = System.Drawing.Color.DimGray;
+            this.txtGuestPhone.IsFocused = false;
+            this.txtGuestPhone.Location = new System.Drawing.Point(474, 181);
+            this.txtGuestPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGuestPhone.Multiline = false;
+            this.txtGuestPhone.Name = "txtGuestPhone";
+            this.txtGuestPhone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGuestPhone.PasswordChar = false;
+            this.txtGuestPhone.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txtGuestPhone.PlaceholderText = "0612334567";
+            this.txtGuestPhone.Size = new System.Drawing.Size(233, 37);
+            this.txtGuestPhone.TabIndex = 98;
+            this.txtGuestPhone.Texts = "";
+            this.txtGuestPhone.UnderlinedStyle = false;
             // 
             // txtID
             // 
@@ -196,18 +196,18 @@
             this.txtID.Texts = "";
             this.txtID.UnderlinedStyle = false;
             // 
-            // dateGostDatumRodjenja
+            // dateGuestDateOfBirth
             // 
-            this.dateGostDatumRodjenja.BorderColor = System.Drawing.Color.Black;
-            this.dateGostDatumRodjenja.BorderSize = 2;
-            this.dateGostDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dateGostDatumRodjenja.Location = new System.Drawing.Point(474, 105);
-            this.dateGostDatumRodjenja.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dateGostDatumRodjenja.Name = "dateGostDatumRodjenja";
-            this.dateGostDatumRodjenja.Size = new System.Drawing.Size(233, 35);
-            this.dateGostDatumRodjenja.SkinColor = System.Drawing.Color.Wheat;
-            this.dateGostDatumRodjenja.TabIndex = 105;
-            this.dateGostDatumRodjenja.TextColor = System.Drawing.Color.Black;
+            this.dateGuestDateOfBirth.BorderColor = System.Drawing.Color.Black;
+            this.dateGuestDateOfBirth.BorderSize = 2;
+            this.dateGuestDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dateGuestDateOfBirth.Location = new System.Drawing.Point(474, 105);
+            this.dateGuestDateOfBirth.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dateGuestDateOfBirth.Name = "dateGuestDateOfBirth";
+            this.dateGuestDateOfBirth.Size = new System.Drawing.Size(233, 35);
+            this.dateGuestDateOfBirth.SkinColor = System.Drawing.Color.Wheat;
+            this.dateGuestDateOfBirth.TabIndex = 105;
+            this.dateGuestDateOfBirth.TextColor = System.Drawing.Color.Black;
             // 
             // curvedButton1
             // 
@@ -224,6 +224,7 @@
             this.curvedButton1.TabIndex = 106;
             this.curvedButton1.Text = "Change";
             this.curvedButton1.UseVisualStyleBackColor = false;
+            this.curvedButton1.Click += new System.EventHandler(this.btnChangeGuest_Click);
             // 
             // curvedButton2
             // 
@@ -240,6 +241,7 @@
             this.curvedButton2.TabIndex = 107;
             this.curvedButton2.Text = "Delete";
             this.curvedButton2.UseVisualStyleBackColor = false;
+            this.curvedButton2.Click += new System.EventHandler(this.btnDeleteGuest_Click);
             // 
             // curvedButton3
             // 
@@ -256,48 +258,46 @@
             this.curvedButton3.TabIndex = 108;
             this.curvedButton3.Text = "Add";
             this.curvedButton3.UseVisualStyleBackColor = false;
+            this.curvedButton3.Click += new System.EventHandler(this.btnAddGuest_Click);
             // 
-            // lbxGost
+            // lbxGuest
             // 
-            this.lbxGost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(188)))), ((int)(((byte)(140)))));
-            this.lbxGost.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbxGost.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbxGost.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.lbxGost.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbxGost.FormattingEnabled = true;
-            this.lbxGost.HorizontalScrollbar = true;
-            this.lbxGost.ItemHeight = 26;
-            this.lbxGost.Location = new System.Drawing.Point(0, 335);
-            this.lbxGost.Name = "lbxGost";
-            this.lbxGost.Size = new System.Drawing.Size(932, 260);
-            this.lbxGost.TabIndex = 110;
-            this.lbxGost.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lbxGost_DrawItem_1);
+            this.lbxGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(188)))), ((int)(((byte)(140)))));
+            this.lbxGuest.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbxGuest.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbxGuest.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.lbxGuest.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxGuest.FormattingEnabled = true;
+            this.lbxGuest.ItemHeight = 20;
+            this.lbxGuest.Location = new System.Drawing.Point(0, 335);
+            this.lbxGuest.Name = "lbxGuest";
+            this.lbxGuest.Size = new System.Drawing.Size(932, 260);
+            this.lbxGuest.TabIndex = 111;
             // 
-            // FormGost
+            // FormGuest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(932, 595);
-            this.Controls.Add(this.lbxGost);
+            this.Controls.Add(this.lbxGuest);
             this.Controls.Add(this.curvedButton3);
             this.Controls.Add(this.curvedButton2);
             this.Controls.Add(this.curvedButton1);
-            this.Controls.Add(this.dateGostDatumRodjenja);
+            this.Controls.Add(this.dateGuestDateOfBirth);
             this.Controls.Add(this.txtID);
-            this.Controls.Add(this.txtGostTelefon);
-            this.Controls.Add(this.txtGostPrezime);
-            this.Controls.Add(this.txtGostIme);
+            this.Controls.Add(this.txtGuestPhone);
+            this.Controls.Add(this.txtGuestLastName);
+            this.Controls.Add(this.txtGuestFirstName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormGost";
+            this.Name = "FormGuest";
             this.Text = "Guests";
-            this.Load += new System.EventHandler(this.FormGost_Load);
+            this.Load += new System.EventHandler(this.FormGuest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,14 +309,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private UI_Elements.CustomTextBox txtGostIme;
-        private UI_Elements.CustomTextBox txtGostPrezime;
-        private UI_Elements.CustomTextBox txtGostTelefon;
+        private UI_Elements.CustomTextBox txtGuestFirstName;
+        private UI_Elements.CustomTextBox txtGuestLastName;
+        private UI_Elements.CustomTextBox txtGuestPhone;
         private UI_Elements.CustomTextBox txtID;
-        private CustomControls.RJControls.CustomDateTimePicker dateGostDatumRodjenja;
-        private UI_Elements.CurvedButton curvedButton1;
-        private UI_Elements.CurvedButton curvedButton2;
-        private UI_Elements.CurvedButton curvedButton3;
-        private System.Windows.Forms.ListBox lbxGost;
+        private CustomControls.RJControls.CustomDateTimePicker dateGuestDateOfBirth;
+        private UI_Elements.CustomButton curvedButton1;
+        private UI_Elements.CustomButton curvedButton2;
+        private UI_Elements.CustomButton curvedButton3;
+        private UI_Elements.CustomListBox lbxGuest;
     }
 }

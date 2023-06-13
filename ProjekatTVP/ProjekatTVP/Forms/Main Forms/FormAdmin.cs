@@ -1,4 +1,4 @@
-﻿using ProjekatTVP.DataKlase;
+﻿using ProjekatTVP.FileManagment;
 using ProjekatTVP.Forms;
 using System;
 using System.Collections.Generic;
@@ -12,48 +12,48 @@ namespace ProjekatTVP
 {
     public partial class FormAdmin : CustomForm
     {
-        private Form activeForm;
-        private Button currentButton;
+        private Form _activeForm;
+        private Button _currentButton;
         public FormAdmin()
         {
             InitializeComponent();
         }
         private void Admin_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Child_Forms.Admin.FormGost(), btnGuests);
+            OpenChildForm(new Forms.Child_Forms.Admin.FormGuest(), btnGuests);
         }
         
         private void btnGuests_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Child_Forms.Admin.FormGost(), sender);
+            OpenChildForm(new Forms.Child_Forms.Admin.FormGuest(), sender);
         }
 
         private void btnRooms_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Child_Forms.Admin.FormSoba(), sender);
+            OpenChildForm(new Forms.Child_Forms.Admin.FormRoom(), sender);
         }
 
         private void btnReservations_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Child_Forms.Admin.FormRezervacije(), sender);
+            OpenChildForm(new Forms.Child_Forms.Admin.FormReservations(), sender);
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Child_Forms.Admin.FormKorisnik(), sender);
+            OpenChildForm(new Forms.Child_Forms.Admin.FormUser(), sender);
 
         }
         private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
             {
-                if (currentButton != (Button)btnSender)
+                if (_currentButton != (Button)btnSender)
                 {
                     DisableButton();
-                    currentButton = (Button)btnSender;
-                    currentButton.BackColor = Color.FromArgb(226, 166, 92);
-                    currentButton.ForeColor = Color.Black;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    _currentButton = (Button)btnSender;
+                    _currentButton.BackColor = Color.FromArgb(226, 166, 92);
+                    _currentButton.ForeColor = Color.Black;
+                    _currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -71,10 +71,10 @@ namespace ProjekatTVP
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {
-            if (activeForm != null)
-                activeForm.Close();
+            if (_activeForm != null)
+                _activeForm.Close();
             ActivateButton(btnSender);
-            activeForm = childForm;
+            _activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -83,6 +83,8 @@ namespace ProjekatTVP
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+            // Centering the label
+            lblTitle.Location = new Point(panelAdmin.Width + panelDesktopPane.Width / 2 - lblTitle.Width/2, lblTitle.Height); ;
         }
 
         private void panelDesktopPane_Paint(object sender, PaintEventArgs e)
@@ -93,9 +95,7 @@ namespace ProjekatTVP
             Color startColor =  ColorTranslator.FromHtml("#ECBC96");
             Color endColor = ColorTranslator.FromHtml("#ECBC76");
 
-            // Create a linear gradient brush
-            LinearGradientBrush gradientBrush = new LinearGradientBrush(
-                ClientRectangle, startColor, endColor, LinearGradientMode.BackwardDiagonal);
+            LinearGradientBrush gradientBrush = new LinearGradientBrush(ClientRectangle, startColor, endColor, LinearGradientMode.BackwardDiagonal);
 
             // Fill the form's background with the gradient brush
             e.Graphics.FillRectangle(gradientBrush, ClientRectangle);

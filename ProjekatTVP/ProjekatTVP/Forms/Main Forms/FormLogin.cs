@@ -1,4 +1,4 @@
-﻿using ProjekatTVP.DataKlase;
+﻿using ProjekatTVP.FileManagment;
 using ProjekatTVP.Forms;
 using System;
 using System.Drawing;
@@ -18,29 +18,29 @@ namespace ProjekatTVP
             string pass = txtPassword.Texts;
             if (user == "" || pass == "")
             {
-                PovratneInformacije.OstaviliStePraznaPolja();
+                Feedback.SomeFieldsAreEmpty();
                 return;
             }
-            var povratnaInformacijaKorisnika = Utilities.VratiPovratneInformacijeZaKorisnika(user, pass);
+            var feedbackForUserCredentials = Utilities.GetFeedbackForUser(user, pass);
 
-            if (povratnaInformacijaKorisnika == null)
+            if (feedbackForUserCredentials == null)
             {
-                PovratneInformacije.NekaPoljaNisuDobra();
+                Feedback.SomeFiledsAreNotGood();
                 return;
             }
 
             Form formToShow;
 
-            switch (povratnaInformacijaKorisnika.Pozicija)
+            switch (feedbackForUserCredentials.Role)
             {
                 case "admin":
                     formToShow = new FormAdmin();
                     break;
                 case "recepcionar":
-                    formToShow = new FormRecepcionar();
+                    formToShow = new FormReceptionist();
                     break;
                 default:
-                    MessageBox.Show("Pozicija korisnika nije definisana");
+                    MessageBox.Show("The role is not defined for that user");
                     return;
             }
 

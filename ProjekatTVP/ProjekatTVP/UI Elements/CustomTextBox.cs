@@ -17,12 +17,14 @@ namespace ProjekatTVP.UI_Elements
         private Color borderColor = Color.MediumSlateBlue;
         private Color borderFocusColor = Color.HotPink;
         private int borderSize = 2;
-        private bool underlinedStyle = false;
-        private bool isFocused = false;
         private int borderRadius = 0;
+        
         private Color placeholderColor = Color.DarkGray;
         private string placeholderText = "";
         private bool isPlaceholder = false;
+
+        private bool underlinedStyle = false;
+        private bool isFocused = false;
         private bool isPasswordChar = false;
         public CustomTextBox()
         {

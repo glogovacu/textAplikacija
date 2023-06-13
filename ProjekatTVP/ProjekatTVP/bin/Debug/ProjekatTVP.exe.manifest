@@ -42,35 +42,17 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProjekatTVP.exe" size="271320">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProjekatTVP.exe" size="250328">
       <assemblyIdentity name="ProjekatTVP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0eS0nAKVba3AieRZmFWol9547LyRPMKPve4joX1NmKg=</dsig:DigestValue>
+        <dsig:DigestValue>pHRt62CzB6wNw3j34LHfNuxbkleHjslRY0lQDnKf7aI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="gosti.txt" size="322">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>5s0xxuiOwBtGHRoSxqMhBDXfmsvsj4ntCErLR4q4/eY=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="korisnici.txt" size="99">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mYEjMNGMaPTiZMO4IHelhCDslDksaCD/4kpWtyXoNnM=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="ProjekatTVP.exe.config" size="189">
     <hash>
       <dsig:Transforms>
@@ -78,24 +60,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="rezervacije.txt" size="45">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>LEM2ey1/B0MXdwcsvB7EsUZWfRgtNu9Pl8QoWSJx8aw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="sobe.txt" size="47">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rQLMCSzr3Dzz6Hvcoe2xj07XukwIl5p6LyylS8ky6BE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

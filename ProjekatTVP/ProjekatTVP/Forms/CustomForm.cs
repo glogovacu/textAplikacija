@@ -20,6 +20,7 @@ namespace ProjekatTVP.Forms
         public CustomForm()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
             Button exitButton = new Button();
             Button maximizeButton = new Button();
             Button minimizeButton = new Button();

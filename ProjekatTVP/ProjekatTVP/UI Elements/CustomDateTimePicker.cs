@@ -12,60 +12,16 @@ namespace CustomControls.RJControls
 {
     public class CustomDateTimePicker : DateTimePicker
     {
-        private Color skinColor = Color.MediumSlateBlue;
-        private Color textColor = Color.White;
-        private Color borderColor = Color.PaleVioletRed;
-        private int borderSize = 0;
+        private Color _backColor = Color.Wheat;
+        private Color _foreColor = Color.White;
+        private Color _borderColor = Color.MediumPurple;
+        private int _borderSize = 0;
 
-        private bool droppedDown = false;
-        private Image calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
-        private RectangleF iconButtonArea;
-        private const int calendarIconWidth = 34;
-        private const int arrowIconWidth = 17;
-
-        public Color SkinColor
-        {
-            get { return skinColor; }
-            set
-            {
-                skinColor = value;
-                if (skinColor.GetBrightness() >= 0.6F)
-                    calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
-                else calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
-                this.Invalidate();
-            }
-        }
-
-        public Color TextColor
-        {
-            get { return textColor; }
-            set
-            {
-                textColor = value;
-                this.Invalidate();
-            }
-        }
-
-        public Color BorderColor
-        {
-            get { return borderColor; }
-            set
-            {
-                borderColor = value;
-                this.Invalidate();
-            }
-        }
-
-        public int BorderSize
-        {
-            get { return borderSize; }
-            set
-            {
-                borderSize = value;
-                this.Invalidate();
-            }
-        }
-
+        private bool _droppedDown = false;
+        private Image _calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
+        private RectangleF _iconButtonArea;
+        private const int _calendarIconWidth = 34;
+        private const int _arrowIconWidth = 17;
         public CustomDateTimePicker()
         {
             this.SetStyle(ControlStyles.UserPaint, true);
@@ -73,15 +29,61 @@ namespace CustomControls.RJControls
             this.Font = new Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         }
 
+        #region Properties
+        public Color SkinColor
+        {
+            get { return _backColor; }
+            set
+            {
+                _backColor = value;
+                if (_backColor.GetBrightness() >= 0.6F)
+                    _calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
+                else _calendarIcon = ProjekatTVP.Properties.Resources.calendarManji;
+                this.Invalidate();
+            }
+        }
+
+        public Color TextColor
+        {
+            get { return _foreColor; }
+            set
+            {
+                _foreColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public Color BorderColor
+        {
+            get { return _borderColor; }
+            set
+            {
+                _borderColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public int BorderSize
+        {
+            get { return _borderSize; }
+            set
+            {
+                _borderSize = value;
+                this.Invalidate();
+            }
+        }
+        #endregion
+
+        #region Overrides
         protected override void OnDropDown(EventArgs eventargs)
         {
             base.OnDropDown(eventargs);
-            droppedDown = true;
+            _droppedDown = true;
         }
         protected override void OnCloseUp(EventArgs eventargs)
         {
             base.OnCloseUp(eventargs);
-            droppedDown = false;
+            _droppedDown = false;
         }
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
@@ -91,23 +93,23 @@ namespace CustomControls.RJControls
         protected override void OnPaint(PaintEventArgs e)
         {
             using (Graphics graphics = this.CreateGraphics())
-            using (Pen penBorder = new Pen(borderColor, borderSize))
-            using (SolidBrush skinBrush = new SolidBrush(skinColor))
+            using (Pen penBorder = new Pen(_borderColor, _borderSize))
+            using (SolidBrush skinBrush = new SolidBrush(_backColor))
             using (SolidBrush openIconBrush = new SolidBrush(Color.FromArgb(50, 64, 64, 64)))
-            using (SolidBrush textBrush = new SolidBrush(textColor))
+            using (SolidBrush textBrush = new SolidBrush(_foreColor))
             using (StringFormat textFormat = new StringFormat())
             {
                 RectangleF clientArea = new RectangleF(0, 0, this.Width - 0.5F, this.Height - 0.5F);
-                RectangleF iconArea = new RectangleF(clientArea.Width - calendarIconWidth, 0, calendarIconWidth, clientArea.Height);
+                RectangleF iconArea = new RectangleF(clientArea.Width - _calendarIconWidth, 0, _calendarIconWidth, clientArea.Height);
                 penBorder.Alignment = PenAlignment.Inset;
                 textFormat.LineAlignment = StringAlignment.Center;
 
                 graphics.FillRectangle(skinBrush, clientArea);
-                //Draw text
+
                 graphics.DrawString("   " + this.Text, this.Font, textBrush, clientArea, textFormat);
-                if (droppedDown == true) graphics.FillRectangle(openIconBrush, iconArea);
-                if (borderSize >= 1) graphics.DrawRectangle(penBorder, clientArea.X, clientArea.Y, clientArea.Width, clientArea.Height);
-                graphics.DrawImage(calendarIcon, this.Width - calendarIcon.Width - 9, (this.Height - calendarIcon.Height) / 2);
+                if (_droppedDown == true) graphics.FillRectangle(openIconBrush, iconArea);
+                if (_borderSize >= 1) graphics.DrawRectangle(penBorder, clientArea.X, clientArea.Y, clientArea.Width, clientArea.Height);
+                graphics.DrawImage(_calendarIcon, this.Width - _calendarIcon.Width - 9, (this.Height - _calendarIcon.Height) / 2);
 
             }
         }
@@ -116,22 +118,25 @@ namespace CustomControls.RJControls
         {
             base.OnHandleCreated(e);
             int iconWidth = GetIconButtonWidth();
-            iconButtonArea = new RectangleF(this.Width - iconWidth, 0, iconWidth, this.Height);
+            _iconButtonArea = new RectangleF(this.Width - iconWidth, 0, iconWidth, this.Height);
         }
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
-            if (iconButtonArea.Contains(e.Location))
+            if (_iconButtonArea.Contains(e.Location))
                 this.Cursor = Cursors.Hand;
             else this.Cursor = Cursors.Default;
         }
+        #endregion
 
+        #region Private Methods
         private int GetIconButtonWidth()
         {
             int textWidh = TextRenderer.MeasureText(this.Text, this.Font).Width;
-            if (textWidh <= this.Width - (calendarIconWidth + 20))
-                return calendarIconWidth;
-            else return arrowIconWidth;
+            if (textWidh <= this.Width - (_calendarIconWidth + 20))
+                return _calendarIconWidth;
+            else return _arrowIconWidth;
         }
+        #endregion
     }
 }

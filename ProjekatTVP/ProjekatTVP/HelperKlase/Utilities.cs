@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjekatTVP.DataKlase
+namespace ProjekatTVP.FileManagment
 {
     public class Utilities
     {
-        public static Korisnik VratiPovratneInformacijeZaKorisnika(string user, string pass)
+        public static User GetFeedbackForUser(string user, string pass)
         {
-            foreach (Korisnik k in FileStorage.ListKorisnici)
+            foreach (User k in FileStorage.ListUser)
             {
                 if (k.Username.Equals(user) && k.Password.Equals(pass))
                 {
@@ -21,28 +21,41 @@ namespace ProjekatTVP.DataKlase
             }
             return null;
         }
-        public static void DrawNewItems(object sender, DrawItemEventArgs e)
+        public static void CreateHorizontalScrollBar(ListBox listBox)
         {
-            ListBox listBox = (ListBox)sender;
+            int maxIndex = 0;
+            int maxLength = 0;
 
-            string itemText = listBox.Items[e.Index].ToString();
-            string[] parts = itemText.Split(' ');
+            for (int i = 0; i < listBox.Items.Count; i++)
+            {
+                string item = listBox.Items[i].ToString();
+                int length = item.Length;
 
-            Font regularFont = e.Font;
+                if (length > maxLength)
+                {
+                    maxLength = length;
+                    maxIndex = i;
+                }
+            }
+
+            Font regularFont = listBox.Font;
             Font boldFont = new Font(regularFont, FontStyle.Bold);
 
-            int xOffset = 0;
-            for (int i = 0; i < parts.Length; i += 2)
-            {
+            listBox.HorizontalScrollbar = true;
+            listBox.UseTabStops = true;
 
-                Point drawPosition = new Point(e.Bounds.Left + xOffset, e.Bounds.Top);
-                TextRenderer.DrawText(e.Graphics, parts[i].Trim(), boldFont, drawPosition, e.ForeColor);
+            // Make sure no items are displayed partially.
+            listBox.IntegralHeight = true;
 
-                Point valuePosition = new Point(drawPosition.X + TextRenderer.MeasureText(parts[i].Trim(), boldFont).Width, drawPosition.Y);
-                TextRenderer.DrawText(e.Graphics, parts[i + 1].Trim(), regularFont, valuePosition, e.ForeColor);
+            listBox.HorizontalScrollbar = true;
 
-                xOffset += 5 + TextRenderer.MeasureText(parts[i].Trim() + parts[i + 1].Trim(), boldFont).Width;
-            }
+            // Create a Graphics object to use when determining the size of the largest item in the ListBox.
+            Graphics g = listBox.CreateGraphics();
+
+            // Determine the size for HorizontalExtent using the MeasureString method using the biggest item in the list.
+            int hzSize = (int)g.MeasureString(listBox.Items[maxIndex].ToString(), boldFont).Width + 10;
+            // Set the HorizontalExtent property.
+            listBox.HorizontalExtent = hzSize;
         }
 
 
