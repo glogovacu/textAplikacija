@@ -35,7 +35,7 @@ If you want to build the app everything will work if you follow publish wizard.
 Manage guests, rooms, reservations and users.
 
 ## To-Do
-- BinaryFormatter instead of ReadAllLines
+- Add encription to files
 - Optimization if possible for text files
 - Implementation of encapsulation instead of static variables
 - Add a custom combo box 
