@@ -39,6 +39,8 @@ Manage guests, rooms, reservations and users.
 - Optimization if possible for text files
 - Implementation of encapsulation instead of static variables
 - Add a custom combo box 
+- Make it resposive
+- Add a log out button
 
 ## Changelog:
 	13.06.2023.
